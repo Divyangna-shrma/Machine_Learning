@@ -1,3 +1,6 @@
+#I have implemented SLR using Stochastic Gradient Descent Optimization on the food truck data named "simple_l.csv" file 
+#present in my data directory.
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
