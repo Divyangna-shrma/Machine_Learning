@@ -1,3 +1,8 @@
+#I've implemented Multivariate Linear regression to predict the price that a house will sell for.
+#The difference this time around is we have more than one dependent variable. 
+#We're given both the size of the house in square feet, and the number of bedrooms in the house. 
+#The data is present by tha name of "data.csv" in my "data directory.
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
