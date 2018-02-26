@@ -1,3 +1,11 @@
+#In this I've implemented simple linear regression to predict profits for a food truck.
+#Suppose you are the CEO of a restaurant franchise and are considering different cities for opening a new outlet.
+#The chain already has trucks in various cities and you have data for profits and populations from the cities.
+#You'd like to figure out what the expected profit of a new food truck might be given only the population of the city that 
+#it would be placed in.
+#Let's start by examining the data which is in a file called "ex1data1.txt" in the "data" directory of my repository above.
+
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
