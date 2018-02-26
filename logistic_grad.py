@@ -1,3 +1,6 @@
+#I've built a Logistic Regression Model using Stochastic Gradient Descent that estimates the probability of admission based on the
+#exam scores. The data is present in the "data" directory of my repo by the name "logistic.csv"
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -56,11 +59,6 @@ def update_weights(X, Y, theta, rate):
     #1 - Get Predictions
     predictions = predict(X, theta)
 
-    #2 Transpose features from (200, 3) to (3, 200)
-    # So we can multiply w the (200,1)  cost matrix.
-    # Returns a (3,1) matrix holding 3 partial derivatives --
-    # one for each feature -- representing the aggregate
-    # slope of the cost function across all observations
     gradient = np.dot(X.T,  predictions - Y)
 
     #3 Take the average cost derivative for each feature
@@ -127,6 +125,5 @@ def plot_decision_boundary(trues, falses):
     ax.set_ylabel('Predicted Probability')
     plt.axhline(.5, color='black')
     plt.show()
-    
-plot_decision_boundary(1,0)
+
 
