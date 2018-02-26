@@ -1,3 +1,5 @@
+#I've implemented MLR using Gradient Descent Optimization Technique on the same "data.csv" file to predict price of house.
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -64,24 +66,9 @@ ax.set_title('Error vs. Training Epoch')
 
 # Ploting the variables as scatter plot
 
-#fig = plt.figure()
-#ax = Axes3D(fig)
-#ax.scatter(data['Size'],data['Bed'],data['Profit'], color='#ef1234')
-#plt.show()
+fig = plt.figure()
+ax = Axes3D(fig)
+ax.scatter(data['Size'],data['Bed'],data['Profit'], color='#ef1234')
+plt.show()
 
-
-def grad_desc(X,Y,theta,rate,iters):
-    cost_history=[0]*iters
-    for i in range(iters):
-        hypothesis= logistic_func(X,theta)
-        loss= hypothesis-Y
-        grad= (X.T.dot(loss))/m
-        theta= theta- rate*grad
-        cost=cost_func(X,Y,theta)
-        cost_history[i]=cost
-    return theta,cost_history
-
-(t,c)=grad_desc(X,Y,theta,rate,iters)
-
-print(cost_func(X,Y,t))
 
