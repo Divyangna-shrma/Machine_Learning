@@ -1,3 +1,5 @@
+#I've implemented MLR using Stochastic Gradient Descent Optimization Technique on the same "data.csv" file to predict price of house.
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
