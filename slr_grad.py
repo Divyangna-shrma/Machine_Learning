@@ -1,4 +1,4 @@
-#I have implemented SLR using Gradient Descent Optimization using the food truck data named "simple_l.csv" file present in my data directory.
+#I have implemented SLR using Gradient Descent Optimization on the food truck data named "simple_l.csv" file present in my data directory.
 
 import numpy as np
 import pandas as pd
