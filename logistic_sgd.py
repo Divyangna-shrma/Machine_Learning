@@ -1,3 +1,6 @@
+#I've applied Logistic Regression model using sklearn, that estimates the probability of admission based on the exam scores.
+#the data "logistic.csv" is present in my "data" directory.
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plyplt
